@@ -1,4 +1,4 @@
-/* square.c */
+/* Square.c */
 #include <stdio.h>
 
 int square(int n) {
