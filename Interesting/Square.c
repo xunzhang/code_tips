@@ -2,13 +2,12 @@
 #include <stdio.h>
 
 int square(int n) {
-	int i, res = 1, x = 1, dx = 1;
-	for(i = 1; i < n; ++i) {
-		dx += 2;
-		x += dx;	
-		res = x;
+	int a = 0, b = 1;	
+	while(n--) {
+		a += b;
+		b += 2;	
 	}
-	return res;	
+	return a;
 }
 
 int main(void) 
