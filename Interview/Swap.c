@@ -25,6 +25,7 @@ int main(void)
 	y2 ^= x2;
 	x2 ^= y2;
 	printf("%d\t%d\n", x2, y2);
-	printf("%d\n", 7^4);
-	printf("%d\n", 3^4);
+	// x 4 y 7  xor is reversible : tmp = x ^ y; y = tmp ^ x; x = tmp ^ y;
+	printf("%d\n", (4 ^ 7) ^ (7 ^ (4 ^ 7))); // x = (x ^ y) ^ (y ^ (x ^ y))
+	printf("%d\n", 7 ^ (4 ^ 7)); // y = y ^ (x ^ y)
 }
