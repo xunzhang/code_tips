@@ -38,7 +38,7 @@ int main(void)
 	printf("%x\n", &ar + 1);
 	
 /*
- * disorder
+ * disorder: decided by the compiler
  *
  */
 	int z = b() + c();
