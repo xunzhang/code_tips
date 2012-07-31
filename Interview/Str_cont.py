@@ -1,11 +1,14 @@
 #! /usr/bin/python
 # Filename: Str_cont.py
+#
 # Story from paultyma.blogspot.jp/2010/11/google-interviewing-story.html
+#
 # Example: String1: ABCDEFGHLMNOPQRS	String1: ABCDEFGHLMNOPQRS
 #	   String2: DCGSRQPOM		String2: DCGSRQPOZ
 #	   Output: true			Output: false
 #
-# Best complexity: o(m+n) m:len(String1) & n:len(String2)
+#
+# Best complexity: o(m+n) m:len(String1) & n:len(String2) and it is much better than hash-table solution when there are repeated letters... 
 #
 # Notice: you must input the string in upper case!
 
@@ -44,6 +47,7 @@ pro = 1
 for i in String1:
 	pro *= dst[i]
 for i in String2:
+	pro /= dst[i]
 	if pro % dst[i] != 0:
 		print 'false'
 		exit()	
