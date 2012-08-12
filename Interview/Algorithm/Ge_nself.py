@@ -1,5 +1,6 @@
 #! /usr/bin/python
-# Filename : ge_nself.py
+# Filename: ge_nself.py
+# Notice the trap of O(n^2)
 
 # input size
 n = raw_input("input size\n")
