@@ -15,10 +15,9 @@ for i in range(1, int(n)):
 # format A as [1, 12, 123, 1234, 12345]
 for i in range(1, int(n)):
 	A[i] *= A[i-1]
-print A
-print B
 # assign the result
 for i in range(1, int(n) - 1):
 	B[i] = A[i-1] * B[i+1]
 B[int(n)-1] = A[int(n)-2] 
+# print the result
 print B
