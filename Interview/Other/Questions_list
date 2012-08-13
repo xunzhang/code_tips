@@ -1,5 +1,0 @@
-Array of 100 integers from 1 to 100, shuffled. One integer is taken out, find that integer.	(sum)
-
-Given two sorted integer arrays, write an algorithm to get back the intersection and the union.		(two index to move)
-
-Write a function to determine if a string (consisting only of parenthesis) is balanced.	(+1 -1)
