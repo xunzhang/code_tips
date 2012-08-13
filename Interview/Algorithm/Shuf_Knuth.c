@@ -24,7 +24,7 @@ int randint(int l, int u) {
   return l + rand() % (u - l + 1);
 }
 
-/* Another version, time complexity is O(n+mlogm) and space complexity is O(n). */
+/* Another version based on the original "Knuth-Fisher-Yates shuffle algorithm", a little regid. Time complexity is O(n+mlogm) and space complexity is O(n). */
 void GenShuf(int m, int n) {
   int i, j, tmp;
   int *x = (int *)malloc(n*sizeof(int)); // n size of memory
