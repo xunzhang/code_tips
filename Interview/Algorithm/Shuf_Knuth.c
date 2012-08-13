@@ -36,6 +36,7 @@ void GenShuf(int m, int n) {
   // sort(x, x+m); // O(mlogm)
   for(i = 0; i < m; ++i)
     printf("%d\n", x[i]);
+  free(x);
 }
 
 /* Recursion version, take care of stackoverflow:). */
