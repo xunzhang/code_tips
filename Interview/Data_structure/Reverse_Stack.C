@@ -29,6 +29,7 @@ int main()
   stk.push(2);  
   stk.push(3);  
   Reverse_Stack(stk);
+  /* notice the input */
   std::cout << stk.top() << std::endl;
   stk.pop();
   std::cout << stk.top() << std::endl;
