@@ -13,11 +13,11 @@ public:
   int empty() {
     return q1.empty() && q2.empty();
   }
-  
+   
   void push(const T& val) {
     if(empty()) 
       q1.push(val);
-    else if (q2.empty()) {
+    else if(q2.empty()) {
       q2.push(val);
       T tmp;
       while(!q1.empty()) {
@@ -41,15 +41,18 @@ public:
       return;
     else if(q1.empty()) 
       q2.pop();
-    else 
+    else { 
       q1.pop();
+      std::cout << "front" << q1.front() << std::endl;
+      std::cout << "back" << q1.back() << std::endl;
+    }
   }
   
   const T& top() {
     if(q1.empty()) 
-      return q2.back();
+      return q2.front();
     else 
-      return q1.back();
+      return q1.front();
   }
  
 private:
@@ -65,7 +68,7 @@ int main()
   stk.push(2);  
   stk.push(3);  
   stk.pop();
-  std::cout << stk.top() << std::endl;
   stk.push(4);  
-  stk.push(5);  
+  stk.pop();
+  std::cout << stk.top() << std::endl;
 }
