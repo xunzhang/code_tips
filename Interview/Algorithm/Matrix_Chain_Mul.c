@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define indx(tmp, i, j) (*(tmp + ((j + 1) * i) + j))
 
-int matrix_chain_order(int* size_lst, int result[6][6], int s[6][6], int n) {
+void matrix_chain_order(int* size_lst, int result[6][6], int s[6][6], int n) {
   int i = 0, l = 0, j = 0, k = 0;  
   int tmp = 0;
   for(; i < n; ++i)  
