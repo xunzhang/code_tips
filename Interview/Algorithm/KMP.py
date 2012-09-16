@@ -23,6 +23,8 @@ for i in range(2, m+1):
     j = j + 1
   p[i] = j
 
+print p
+
 # main loop
 j = 0
 for i in range(1, n + 1):

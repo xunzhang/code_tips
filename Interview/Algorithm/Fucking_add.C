@@ -3,7 +3,7 @@
 
 class add {
 public:
-  add() { ++n; sum += n; }
+	  add() { ++n; sum += n; }
   static int getsum() { return sum; }
 private:
   static int n;

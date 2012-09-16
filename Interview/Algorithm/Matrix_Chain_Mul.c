@@ -40,5 +40,6 @@ int main(void)
   try[2] = 3;
   try[3] = 4;
   tty(try);
+  delete [] try;
   return 0;
 }

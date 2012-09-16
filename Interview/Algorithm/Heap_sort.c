@@ -61,6 +61,7 @@ void heap_sort(int *a, int size) {
   build_max_heap(a, size);
   int i;
   for(i = size; i > 0; --i) {
+    //printf("%d\n", a[0]);
     int tmp; tmp = a[i]; a[i] = a[0]; a[0] = tmp;
     heap_size --;
     max_heapify(a, 0);

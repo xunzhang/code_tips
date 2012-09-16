@@ -1,6 +1,7 @@
 /* Power.c */
 #include <stdio.h>
 #include <math.h>
+
 double Sqrt(double val) {
 
   double low = 0, high = val, middle = val / 2;
