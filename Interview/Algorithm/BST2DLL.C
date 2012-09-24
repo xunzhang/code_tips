@@ -10,7 +10,9 @@ void Convert_Node(links pNode, links& plast) {
 }
 
 links Convert_solution(links root) {
-  links tmp = NULL;
-  while(Convert_Node(root, tmp)) tmp = tmp->l;
+  links temp = NULL;
+  Convert_Node(root, temp);
+  links tmp = temp;
+  while(tmp) tmp = tmp->l;
   return tmp;
 }
