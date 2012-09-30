@@ -14,6 +14,7 @@ void perm(int *arry, int indx, int len, int size) {
     printf("\n");
     return; 
   }
+  
   for(i = 0; i < len; ++i) {
     swap(&arry[indx], &arry[indx + i]);
     perm(arry, indx + 1, len - 1, size);
